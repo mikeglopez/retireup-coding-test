@@ -1,0 +1,36 @@
+body {
+  background-color: #fafafa;
+  color: #4e5565;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-header {
+  font-size: calc(10px + 2vmin);
+}
+
+.returnsTable {
+  margin: 20px;
+  border-collapse: collapse;
+}
+
+.returnsTable th,
+.returnsTable tr:not(:last-child) {
+  border-bottom: 1px solid #cccccc;
+  padding: 10px 50px;
+}
+
+.returnsTable th {
+  background-color: #f2f2f2;
+}
+
+.returnsTable td {
+  background-color: #ffffff;
+  padding: 10px;
+}
