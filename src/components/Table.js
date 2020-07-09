@@ -4,13 +4,9 @@ import '../styles/App.css';
 import YearRow from './YearRow';
 
 const Table = props => {
-  const sortedData = props.data.sort((a, b) =>
-    a.year > b.year ? 1 : b.year > a.year ? -1 : 0
-  );
-
   let cumulative = 0;
 
-  const content = sortedData.map(row => {
+  const content = props.data.map(row => {
     cumulative += Number(row.totalReturn);
     return (
       <YearRow
